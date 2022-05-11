@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { OnboardingScreenOne } from './screens/components/OnboardingScreenOne';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>E-Attendance</Text>
+      <Text style={styles.text} >E-Attendance</Text>
+      <OnboardingScreenOne/>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +19,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'blue',
+    fontWeight: 'bold',
+
+
+  }
 });
